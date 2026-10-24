@@ -54,7 +54,6 @@ const createNewTaskElement = function (taskString) {
 };
 
 const addTask = function () {
-  //Create a new list item with the text from the #new-task:
   if (!taskInput.value) return;
   const listItem = createNewTaskElement(taskInput.value);
 
