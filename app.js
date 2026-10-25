@@ -70,12 +70,10 @@ const editTask = function () {
   if (isEditMode) {
 
     label.innerText = editInput.value;
-    editBtn.innerText = "Edit";
   } else {
     editInput.value = label.innerText;
-    editBtn.innerText = "Save";
   }
-
+  editBtn.innerText = isEditMode ? "Edit" : "Save";
   listItem.classList.toggle("editMode");
 };
 
